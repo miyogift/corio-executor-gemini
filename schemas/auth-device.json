@@ -1,0 +1,7 @@
+{
+  "type": "object", "additionalProperties": false,
+  "properties": {
+    "credentialDirectory": { "type": "string", "title": "Existing Gemini credential directory", "description": "Optional absolute .gemini directory; imports only oauth_creds.json once." },
+    "cloudProjectId": { "type": "string", "title": "Google Cloud project ID" }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "object", "additionalProperties": false,
+  "properties": {
+    "approvalMode": { "type": "string", "enum": ["yolo", "plan"], "default": "yolo" },
+    "maxSessionTurns": { "type": "integer", "minimum": 1, "maximum": 1000, "default": 100 }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifestVersion": 1,
+  "sdkVersion": "^1.0.0",
+  "name": "@xcye/corio-executor-gemini",
+  "displayName": "Gemini CLI",
+  "description": "Corio executor extension for Gemini CLI",
+  "version": "1.0.0",
+  "entry": "./dist/index.js",
+  "type": "executor",
+  "executorType": "gemini",
+  "providers": [
+    "google"
+  ],
+  "supportCustomModelProvider": true
+}

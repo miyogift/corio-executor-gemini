@@ -1,0 +1,37 @@
+{
+  "name": "@xcye/corio-executor-gemini",
+  "version": "1.0.0",
+  "description": "Corio executor extension for Gemini CLI",
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./manifest": "./corio.manifest.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "corio.manifest.json",
+    ".agents",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "6.0.3",
+    "@xcye/corio-executor-sdk": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
